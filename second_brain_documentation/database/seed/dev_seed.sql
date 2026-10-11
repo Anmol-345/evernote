@@ -1,0 +1,4 @@
+-- Optional local-development notes. Replace USER_UUID with a real local Auth user UUID.
+-- Do not run against production. This file is intentionally not auto-executed.
+-- insert into public.pages (user_id, title)
+-- values ('USER_UUID', 'Welcome to Second Brain');

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Second Brain Block Schema",
+  "type": "object",
+  "required": [
+    "type",
+    "content"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "page_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "parent_block_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uuid"
+    },
+    "type": {
+      "enum": [
+        "paragraph",
+        "heading",
+        "bulleted_list_item",
+        "numbered_list_item",
+        "todo",
+        "quote",
+        "code",
+        "divider",
+        "callout",
+        "link",
+        "image",
+        "file",
+        "child_page"
+      ]
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "schema_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "content": {
+      "type": "object"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": true
+}

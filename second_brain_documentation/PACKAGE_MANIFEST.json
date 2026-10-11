@@ -1,0 +1,7 @@
+{
+  "project": "Second Brain",
+  "package_type": "documentation and initial database migration baseline",
+  "generated_on": "2026-10-11",
+  "file_count": 38,
+  "important_note": "Documentation and SQL are proposed baselines; review migrations and verify all behavior in a development Supabase project before production use."
+}
